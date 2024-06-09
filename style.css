@@ -1,5 +1,5 @@
 :root {
-    --primary-clr: #b38add;
+    --primary-clr:  #003C43;
     
   }
   * {
@@ -13,7 +13,7 @@
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #f5f5f5b1;
+    background: #f5f5f5a9;
     border-radius: 50px;
   }
   ::-webkit-scrollbar-thumb {
@@ -27,8 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
-    background-color: #e2e1dc;
+    padding-bottom: 20px;
+    background-color:#b2b3ab/* #e2e1dc*/
+   /* #003C43*/
+  
+    ;
     
   }
 
@@ -46,7 +49,7 @@
     display: flex;
   
     border-radius: 10px;
-    background-color: #373c4f;
+    background-color: #003C43 /*#373c4f*/;
   }
   .left {
     width: 60%;
@@ -63,7 +66,7 @@
     justify-content: space-between;
     color: #878895;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #edeaea/*#E3FEF7*/;
   }
   /* set after behind the main element */
   .calendar::before,
@@ -75,14 +78,17 @@
     width: 12px;
     height: 97%;
     border-radius: 0 5px 5px 0;
-    background-color: #d3d4d6d7;
+    background-color: /*#d3d4d6d7*//*#373c51*/
+    /*rgb(216, 192, 192)*//* #77B0AA*/
+    #E3FEF7;
     transform: translateY(-50%);
   }
   .calendar::before {
     height: 94%;
     left: calc(100% + 12px);
-    background-color: rgb(153, 153, 153);
-  }
+    /* background-color:#4d546f /*#353a4e*/ /*rgb(153, 153, 153)*/;
+    background-color: #5C8374;
+  } 
   .calendar .month {
     width: 100%;
     height: 80px;
@@ -105,7 +111,7 @@
   }
   .calendar .weekdays {
     width: 100%;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,7 +138,7 @@
     margin-bottom: 20px;
   }
   .calendar .days .day {
-    width: 12%;
+    width: 14.28%;
     height: 60px;
     display: flex;
     font-size: 0.9rem;
@@ -228,7 +234,7 @@
     height: 30px;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 1px;
     padding: 0 20px;
     color: var(--primary-clr);
     border-radius: 5px;
@@ -256,6 +262,8 @@
     min-height: 100%;
     padding: 20px 0;
   }
+  
+  
   
   .right .today-date {
     width: 100%;
@@ -342,16 +350,17 @@
   .events .event::after {
     content: "✓";
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
     display: none;
     align-items: center;
     justify-content: center;
     opacity: 0.3;
-    color: var(--primary-clr);
-    transform: translateY(-50%);
+    color:#fff
+    /* color: var(--primary-clr);
+    transform: translateY(-50%); */
   }
   .events .event:hover::after {
     display: flex;
