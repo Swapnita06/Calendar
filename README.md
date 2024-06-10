@@ -1,2 +1,2 @@
 # Calendar
-Intership assignment for Pianalytix Edutech Private Limted.
+Intership assignment for Pianalytix.
