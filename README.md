@@ -1,2 +1,2 @@
-# Melodify
-Intership assignment for Pianalytix Edutech Private Limted.
+# Calendar
+Intership assignment for Pianalytix.
